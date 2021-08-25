@@ -2,11 +2,14 @@
   "name": "jasport3d",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
+    "start": "vite",
     "build": "vite build",
     "serve": "vite preview"
   },
   "devDependencies": {
     "vite": "^2.4.4"
+  },
+  "dependencies": {
+    "three": "^0.131.3"
   }
 }

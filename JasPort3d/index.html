@@ -4,11 +4,116 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Jaskeerat Singh Portfolio </title>
   </head>
   <body>
     <canvas id="bg"></canvas>
+
+    <main>
+
+      <!-- about , education , skills , work experinece , projects , achievements and extracurricular -->
+
+      <header  class="card">
+        <h1>Heyy visitor !! </h1>
+        <p>🚀 Jaskeerat Singh welcomes you in his 3D Portfolio World</p>
+      </header>
+
+
+      <section>
+        <h3>A bit about Jaskeerat :</h3>
+        <p>He's currently a final year undergraduate at GGSIPU, New Delhi and majors in Information Technology field. He loves being in world of programming and coding . He's comfortably codes in Java and also is passionate about Web Development with JavaScript.</p>
+      </section>
+
+      <section class="left">
+        <h2>📜 Education</h2>
+        <ul>
+          <li>GURU GOBIND SINGH INDRAPRASTH UNIVERSITY(2018 - 2022)</li>
+          Bachelor of Technology in Information Technology . Current aggregate of 8.84 C.G.P.A ( 10.0 scale)
+        </ul>
+      </section>
+
+      <section>
+        <h3>Skills</h3>
+        <ul>
+          <li>Programming Languages & Frameworks</li>
+          C++ , Java (with Data Structures , Algorithms & OOPS), Familiar with Python
+          <li> Development Languages & Frameworks</li>
+            HTML5 , CSS3 , JavaScript , Bootstrap , JQuery ,
+            AJAX, React.Js , Node.Js , Express.js , REST Api ,
+            MongoDB , Automation using Selenium &
+            Puppeteer
+          <li> Operating System</li>
+            Windows, Familiar with Unix Environment
+        </ul>
+      </section>
+
+
+      <section class="left">
+        <h3>Work experinece</h3>
+        <ul>
+          <li>Full Stack Web Dev Intern  at  DeepInfoLab (June 2021 - July 2021 )</li>
+          Developed the frontend of a service providing full-stack web application using React.Js and also set up the backend server using Node.Js, Express.Js, with the usage of Twilio
+          API to meet the project goals
+          <li>Software Engineering Intern at (STARTUPIFY) (Dec 2020 - Feb 2021)</li>
+            Developed HawkChat Web Application, Frontend using HTML, CSS, JavaScript, and Backend using Node.js, Express.Js with extensive use of Socket.io, it basically allows
+            users to chat with anyone without any registered account and Was used by the team itself to avoid distractions between daily communications like in other chat applications and saw
+            an increase in productivity by 80% .
+        </ul>
+      </section>
+
+      <section>
+        <h2>👩🏽‍🚀 Projects</h2>
+
+        <p>
+          Abschlag is an application that enables users to write blogs in the markdown format, It also provides CRUD functionality. Developed using Node.Js, Express.Js and MongoDb .
+        </p>
+
+        <p>
+          A web application that can do our Real-Time AI Face Landmark .Detection using Pre-Trained Model " Facemesh-LandmarkDetection" of Tensorflow.js & shows the Face-Mesh by
+          connecting the 3D points through neutral networks on ReactWebcam .
+        </p>
+
+        <p>
+          Uses Tensorflow.js and React.js to detect hand pose estimations and finger poses to help people with disabilities like deafness and dumbness for video communication over all types of devices
+        </p>
+
+      </section>
+
+      <section class="left">
+        <h2>🏆 Accomplishments</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </section>
+
+      <section>
+        <h2>🏆 Extracurricular</h2>
+        <ul>
+          <li>Open Source Contributor:</li>
+          Participated in OpenSource Programs like MLH'20, DWOC'20 , MWOC'21, GSSOC'21, LGM-SOC'21 . 
+          <br>
+          Opened various issues in Microsoft, Facebook(React),VsCode, MetaCal, JBoss's EduClient, and many other repos.
+
+          <li>Active web developer at DSC-GTBIT (August 2020 - Present)</li>
+          <li>Github Student Developer at Github (June 2020 - Present)</li>
+        </ul>
+
+      </section>
+      
+      <blockquote>
+        <p>Thanks for visiting my tiny space!</p>
+      </blockquote>
+
+
+    </main>
    
     <script type="module" src="/main.js"></script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector(".card"), {
+        max: 25,
+        speed: 400
+      });
+    </script>
   </body>
 </html>
