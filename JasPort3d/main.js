@@ -72,13 +72,26 @@ const jas = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMa
 
 scene.add(jas);
 
-// Moon
+// earth 
+const earthTexture = new THREE.TextureLoader().load('./Images/earth.jpg');
+const earth = new THREE.Mesh(
+  new THREE.SphereGeometry(2, 31, 31),
+  new THREE.MeshStandardMaterial({
+    map: earthTexture,
+  })
+);
 
+scene.add(earth);
+
+earth.position.z = 20;
+earth.position.setX(-1);
+
+// Moon
 const moonTexture = new THREE.TextureLoader().load('./Images/moon.jpg');
 const surfaceTexture = new THREE.TextureLoader().load('./Images/surface.jpg');
 
 const moon = new THREE.Mesh(
-  new THREE.SphereGeometry(3, 32, 32),
+  new THREE.SphereGeometry(2, 30, 30),
   new THREE.MeshStandardMaterial({
     map: moonTexture,
     normalMap: surfaceTexture,
@@ -89,6 +102,55 @@ scene.add(moon);
 
 moon.position.z = 30;
 moon.position.setX(-10);
+
+
+// mars
+const marsTexture = new THREE.TextureLoader().load('./Images/mars.jpg');
+const mars = new THREE.Mesh(
+  new THREE.SphereGeometry(5, 35, 35),
+  new THREE.MeshStandardMaterial({
+    map: marsTexture,
+  })
+);
+
+scene.add(mars);
+
+mars.position.z = 40;
+mars.position.setX(-30);
+
+
+// jupiter
+const jupiterTexture = new THREE.TextureLoader().load('./Images/jupiter.jpg');
+const jupiter = new THREE.Mesh(
+  new THREE.SphereGeometry(6, 37, 37),
+  new THREE.MeshStandardMaterial({
+    map: jupiterTexture,
+  })
+);
+
+scene.add(jupiter);
+
+jupiter.position.z = 60;
+jupiter.position.setX(-40);
+
+
+// venus
+const venusTexture = new THREE.TextureLoader().load('./Images/venus.jpg');
+const venus = new THREE.Mesh(
+  new THREE.SphereGeometry(9,39, 39),
+  new THREE.MeshStandardMaterial({
+    map: venusTexture,
+  })
+);
+
+scene.add(venus);
+
+venus.position.z = 90;
+venus.position.setX(-50);
+
+
+
+// **********************************************************************
 
 jas.position.z = -5;
 jas.position.x = 2;
@@ -101,11 +163,23 @@ function moveCamera() {
   moon.rotation.y += 0.075;
   moon.rotation.z += 0.05;
 
+  earth.rotation.x += 0.05;
+  earth.rotation.y += 0.075;
+  earth.rotation.z += 0.05;
+
+  jupiter.rotation.x += 0.05;
+  jupiter.rotation.y += 0.075;
+  jupiter.rotation.z += 0.05;
+
+  venus.rotation.x += 0.05;
+  venus.rotation.y += 0.075;
+  venus.rotation.z += 0.05;
+
+  mars.rotation.x += 0.05;
+  mars.rotation.y += 0.075;
+  mars.rotation.z += 0.05;
+
   jas.rotation.x += 0.05;
-  jas.rotation.y += 0.01;
-  jas.rotation.z += 0.01;
-
-
   jas.rotation.y += 0.01;
   jas.rotation.z += 0.01;
 
@@ -127,6 +201,10 @@ function animate() {
   torus.rotation.z += 0.01;
 
   moon.rotation.x += 0.005;
+  jupiter.rotation.x += 0.005;
+  earth.rotation.x += 0.005;
+  mars.rotation.x += 0.005;
+  venus.rotation.x += 0.005;
   jas.rotation.x += 0.005;
 
   // controls.update();

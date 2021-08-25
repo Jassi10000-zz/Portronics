@@ -8,40 +8,74 @@
   </head>
   <body>
     <canvas id="bg"></canvas>
+     <!-- navbar -->
+     <nav class="navbar">
+      <div class="logo">
+        <img src="./Images/logo.png" height="80px" width="80px">
+        <p><a class="logo-title">JasPort3d</a></p>
+      </div>
+      <div class="navbar-links">
+        <ul>
+          <li><a target="_blank" href="https://drive.google.com/file/d/12vkWPAEi04ubcu6dnJx7VenOT4eKu4W-/view?usp=sharing">Resume</a></li>
+        </ul>
+      </div>
+      <div><a href="#open-modal" class="instructions">Instructions</a></div>
+
+      <!-- modal  -->
+      <div class="modal" id="open-modal">
+        <div>
+          <a href="#" title="close" class="close">Close</a>
+          <ul>
+            <li>Use scrollbar or arrow keys( preferred ) for best experience 🤩</li>
+          </ul> 
+        </div>
+      </div>
+      
+      
+    </nav>
 
     <main>
-
-      <!-- about , education , skills , work experinece , projects , achievements and extracurricular -->
-
-      <header  class="card">
-        <h1>Heyy visitor !! </h1>
-        <p>🚀 Jaskeerat Singh welcomes you in his 3D Portfolio World</p>
+      
+      <header class="card">
+        <h1>ℍ𝕖𝕪 !! 👋 </h1>
+        <p> 𝙅𝙖𝙨𝙠𝙚𝙚𝙧𝙖𝙩 𝙎𝙞𝙣𝙜𝙝 𝙬𝙚𝙡𝙘𝙤𝙢𝙚𝙨 𝙮𝙤𝙪 𝙞𝙣 𝙝𝙞𝙨 3𝘿 🧊 𝙋𝙤𝙧𝙩𝙛𝙤𝙡𝙞𝙤 𝙒𝙤𝙧𝙡𝙙 🚀 🌍🌚🌝</p>
+        <h6 style="font-size: 16px;">Hover this card , believe me it's really a WOW................ 🤩</h6>
       </header>
 
 
       <section>
-        <h3>A bit about Jaskeerat :</h3>
-        <p>He's currently a final year undergraduate at GGSIPU, New Delhi and majors in Information Technology field. He loves being in world of programming and coding . He's comfortably codes in Java and also is passionate about Web Development with JavaScript.</p>
+        <h2><u>𝔸 𝕓𝕣𝕚𝕖𝕗 𝕒𝕓𝕠𝕦𝕥 𝕁𝕒𝕤𝕜𝕖𝕖𝕣𝕒𝕥 𝕊𝕚𝕟𝕘𝕙 :</u></h2>
+        <p> Jaskeerat Singh is currently a final year undergraduate at GGSIPU, New Delhi and majors in Information Technology field. He loves being in world of programming and coding . He's comfortably codes in Java ( with Data Structure & Algorithms and OOPS) and also is passionate about Web Development with JavaScript. He is quite active at participating in Hackathons , Open Source Programmes and Coding Challenges. He aspired to be a successfull Software Engineer who is knowledgable , passionate , determined and can prove to be an asset of the organization where he contributes.</p>
       </section>
 
       <section class="left">
-        <h2>📜 Education</h2>
+        <h2>👨‍🎓 <u>Education </u></h2>
         <ul>
           <li>GURU GOBIND SINGH INDRAPRASTH UNIVERSITY(2018 - 2022)</li>
-          Bachelor of Technology in Information Technology . Current aggregate of 8.84 C.G.P.A ( 10.0 scale)
+          Bachelor of Technology in Information Technology
+          <br>
+          Current aggregate of 3.9 G.P.A ( 4.0 scale)
+
+          <br><br>
+          <li>Lt. Col. Mehar Little Angels Sr. Sec School</li>
+            Passed Matric in 2016 with 9.4 C.G.P.A
+            <br>
+            Passed Intermediate in 2018 with 86%
         </ul>
       </section>
 
       <section>
-        <h3>Skills</h3>
+        <h2>👨‍💻 <u>Skills</u></h2>
         <ul>
           <li>Programming Languages & Frameworks</li>
           C++ , Java (with Data Structures , Algorithms & OOPS), Familiar with Python
+          <br><br>
           <li> Development Languages & Frameworks</li>
             HTML5 , CSS3 , JavaScript , Bootstrap , JQuery ,
             AJAX, React.Js , Node.Js , Express.js , REST Api ,
             MongoDB , Automation using Selenium &
             Puppeteer
+            <br><br>
           <li> Operating System</li>
             Windows, Familiar with Unix Environment
         </ul>
@@ -49,11 +83,12 @@
 
 
       <section class="left">
-        <h3>Work experinece</h3>
+        <h2>🤵 <u>Work experience</u></h2>
         <ul>
           <li>Full Stack Web Dev Intern  at  DeepInfoLab (June 2021 - July 2021 )</li>
           Developed the frontend of a service providing full-stack web application using React.Js and also set up the backend server using Node.Js, Express.Js, with the usage of Twilio
           API to meet the project goals
+          <br><br>
           <li>Software Engineering Intern at (STARTUPIFY) (Dec 2020 - Feb 2021)</li>
             Developed HawkChat Web Application, Frontend using HTML, CSS, JavaScript, and Backend using Node.js, Express.Js with extensive use of Socket.io, it basically allows
             users to chat with anyone without any registered account and Was used by the team itself to avoid distractions between daily communications like in other chat applications and saw
@@ -62,32 +97,74 @@
       </section>
 
       <section>
-        <h2>👩🏽‍🚀 Projects</h2>
+        <h2>🤓 <u>Projects</u></h2>
+        <ul>
 
-        <p>
+
+        <li>CustomPassword</li>
+          CustomPassword is a CLI application helps you generate a strong password based on your conditions like : Length of password and Composition of password ( whether it should be numeric or alphabetic only or a mix of both or with symbols )
+          using your own custom made command , it can even copy it to the clipboard and also save it to our local .txt file 
+          <br>
+          Source Code : <a href="https://github.com/Jassi10000/CustomPassword" style="color:skyblue">https://github.com/Jassi10000/CustomPassword</a>
+        
+          <br><br>
+
+        <li>Abschlag</li>
           Abschlag is an application that enables users to write blogs in the markdown format, It also provides CRUD functionality. Developed using Node.Js, Express.Js and MongoDb .
-        </p>
+          <br>
+          Live at : <a href="https://Github.com" style="color:skyblue">https://github.com</a><br>
+          Source Code : <a href="https://github.com/Jassi10000/Abschlag" style="color:skyblue">https://github.com/Jassi10000/Abschlag</a>
+        
+          <br><br>
 
-        <p>
+        <li>faciem-deprehendatur</li>
           A web application that can do our Real-Time AI Face Landmark .Detection using Pre-Trained Model " Facemesh-LandmarkDetection" of Tensorflow.js & shows the Face-Mesh by
           connecting the 3D points through neutral networks on ReactWebcam .
-        </p>
+          <br>
+          Live at : <a href="https://faciem-deprehendatur.netlify.app/" style="color:skyblue">https://faciem-deprehendatur.netlify.app/</a><br>
+          Source Code : <a href="https://github.com/Jassi10000/faciem-deprehendatur" style="color:skyblue">https://github.com/Jassi10000/faciem-deprehendatur</a>
+        
+          <br><br>
 
-        <p>
+        <li>AI Gesture Recognition and HandPose Estimation System </li>
           Uses Tensorflow.js and React.js to detect hand pose estimations and finger poses to help people with disabilities like deafness and dumbness for video communication over all types of devices
-        </p>
+          <br>
+          Live at : <a href="https://handpose-estimation.netlify.app/" style="color:skyblue">https://handpose-estimation.netlify.app/</a><br>
+          Source Code : <a href="https://github.com/Jassi10000/HandPose-cum-Gesture-Recognition-System" style="color:skyblue">https://github.com/Jassi10000/HandPose-cum-Gesture-Recognition-System</a>
+        
+          
+        </ul>
 
       </section>
 
       <section class="left">
-        <h2>🏆 Accomplishments</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+        <h2>🏆 <u>Accomplishments</u></h2>
+        <ul>
+          <ol type="i">
+            <strong>Student Programs</strong>
+            <li>Contributor of #EddieHub which stood at 1st position in MLH Build</li>
+            <li>Rank 2 in Level 2 of MTM2020 by IBM</li>
+            <li>Completed 30 Days of Google Cloud</li>
+          </ol>
+          <ol type="i">
+            <strong>Badges</strong>
+            <li> GOLD Badge in Java from Hackerrank</li>
+            <li> GOLD Badge for 30 Days of Code in Java from Hackerrank</li>
+            <li>GOLD Badge for 10 Days of JavaScript from Hackerrank</li>
+          </ol>
+          <ol type="i">
+            <strong>Badges</strong>
+            <li>Played as a Team Lead of TechArmy which was 1 of Top 5 all over India to win Hackbenchers Hackathon by HackerEarth</li>
+            <li>Played as a Team Lead of TechArmy which was 1 of Top 5 all over India to win Hackbenchers Hackathon by HackerEarth</li>
+            <li>Played as a Team Lead of BioScanners which was 1 of Top 12 all over India to win NASA Space App Challenge</li>
+          </ol>
+          
+
+        </ul>
       </section>
 
       <section>
-        <h2>🏆 Extracurricular</h2>
+        <h2>🤹‍♂️ <u>Extracurricular</u></h2>
         <ul>
           <li>Open Source Contributor:</li>
           Participated in OpenSource Programs like MLH'20, DWOC'20 , MWOC'21, GSSOC'21, LGM-SOC'21 . 

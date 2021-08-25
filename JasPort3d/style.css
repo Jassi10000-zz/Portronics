@@ -1,7 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
 canvas {
   position: fixed;
   top: 0;
   left: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(15px);
+  box-shadow: 1px 5px 5px 0 black;
+}
+
+.logo {
+  margin: 10px;
+  display: flex;
+}
+
+.logo .logo-title {
+  font-size: 1.5rem;
+  margin: 0.5rem 1rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 1rem;
+  display: block;
+  font-size: 2.5rem;
+}
+
+.instructions {
+  color: #a1fc4c;
+  font-size: 2rem;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  backdrop-filter: blur(101px);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+  padding: 20px;
+}
+
+.modal:target {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal > div {
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2.2em;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.close {
+  color: white;
+  line-height: 45px;
+  font-size: 20px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 15px;
+  width: 85px;
+  text-decoration: none;
 }
 
 :root {
@@ -25,9 +123,6 @@ main {
   grid-template-columns: repeat(12, 1fr);
 }
 
-h1,
-h2,
-h3,
 blockquote {
   font-family: elevon, sans-serif;
   font-weight: 200;
@@ -40,27 +135,37 @@ header {
   box-shadow: 8px 8px 5px black;
   border-radius: 25px;
   grid-column: 2 / span 5;
-  font-size: 2.5rem;
+  font-size: 2rem;
   padding: 2rem;
   margin-bottom: var(--spacing);
+  z-index: 1;
 }
 
 section {
-  grid-column: 2 / 8;
+  grid-column: 2 / 9;
   padding: 1rem;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(8px);
   border: 1px dotted black;
   box-shadow: 8px 8px 5px black;
   border-radius: 25px;
   font-size: 1.25rem;
+  font-weight: bold;
   line-height: 1.5;
   margin-bottom: var(--spacing);
+}
+
+h2 {
+  color: black;
+  font-size: 40px;
 }
 
 .left {
   grid-column: 4 / 12;
 }
 
+ul li {
+  color: #a1fc4c;
+}
 
 blockquote {
   margin: 0;
