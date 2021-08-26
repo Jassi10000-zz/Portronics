@@ -36,14 +36,6 @@ pointLight.position.set(5, 5, 5);
 const ambientLight = new THREE.AmbientLight(0xffffff);
 scene.add(pointLight, ambientLight);
 
-// Helpers
-
-// const lightHelper = new THREE.PointLightHelper(pointLight)
-// const gridHelper = new THREE.GridHelper(200, 50);
-// scene.add(lightHelper, gridHelper)
-
-// const controls = new OrbitControls(camera, renderer.domElement);
-
 function addStar() {
   const geometry = new THREE.SphereGeometry(0.25, 24, 24);
   const material = new THREE.MeshStandardMaterial({ color: 0xffffff });
@@ -100,14 +92,14 @@ const moon = new THREE.Mesh(
 
 scene.add(moon);
 
-moon.position.z = 30;
+moon.position.z = 25;
 moon.position.setX(-10);
 
 
 // mars
 const marsTexture = new THREE.TextureLoader().load('./Images/mars.jpg');
 const mars = new THREE.Mesh(
-  new THREE.SphereGeometry(5, 35, 35),
+  new THREE.SphereGeometry(4, 33, 33),
   new THREE.MeshStandardMaterial({
     map: marsTexture,
   })
@@ -115,8 +107,8 @@ const mars = new THREE.Mesh(
 
 scene.add(mars);
 
-mars.position.z = 40;
-mars.position.setX(-30);
+mars.position.z = 35;
+mars.position.setX(-20);
 
 
 // jupiter
@@ -130,7 +122,7 @@ const jupiter = new THREE.Mesh(
 
 scene.add(jupiter);
 
-jupiter.position.z = 60;
+jupiter.position.z = 50;
 jupiter.position.setX(-40);
 
 
@@ -145,10 +137,22 @@ const venus = new THREE.Mesh(
 
 scene.add(venus);
 
-venus.position.z = 90;
+venus.position.z = 75;
 venus.position.setX(-50);
 
+// neptune
+const neptuneTexture = new THREE.TextureLoader().load('./Images/neptune.jpg');
+const neptune = new THREE.Mesh(
+  new THREE.SphereGeometry(10,40, 40),
+  new THREE.MeshStandardMaterial({
+    map: neptuneTexture,
+  })
+);
 
+scene.add(neptune);
+
+neptune.position.z = 110;
+neptune.position.setX(-60);
 
 // **********************************************************************
 
@@ -174,6 +178,10 @@ function moveCamera() {
   venus.rotation.x += 0.05;
   venus.rotation.y += 0.075;
   venus.rotation.z += 0.05;
+
+  neptune.rotation.x += 0.05;
+  neptune.rotation.y += 0.075;
+  neptune.rotation.z += 0.05;
 
   mars.rotation.x += 0.05;
   mars.rotation.y += 0.075;
@@ -205,6 +213,7 @@ function animate() {
   earth.rotation.x += 0.005;
   mars.rotation.x += 0.005;
   venus.rotation.x += 0.005;
+  neptune.rotation.x += 0.005;
   jas.rotation.x += 0.005;
 
   // controls.update();

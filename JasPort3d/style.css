@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -15,12 +16,13 @@ canvas {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100vw;
   backdrop-filter: blur(15px);
   box-shadow: 1px 5px 5px 0 black;
 }
 
 .logo {
-  margin: 10px;
+  margin: 6px 25px;
   display: flex;
 }
 
@@ -52,9 +54,9 @@ canvas {
 }
 
 .instructions {
-  color: #a1fc4c;
-  font-size: 2rem;
-  margin: 20px;
+  color: yellow;
+  font-size: 1.8rem;
+  margin-right: 30px;
   cursor: pointer;
 }
 
@@ -116,7 +118,7 @@ main {
   color: white;
   z-index: 99;
   position: absolute;
-  width: 100%;
+  height: 80vh;
   margin: 0px auto;
   padding: 120px 0px;
   display: grid;
@@ -131,21 +133,26 @@ blockquote {
 
 header {
   backdrop-filter: blur(5px);
-  border: 1px dotted black;
+  border: 0.5px solid black;
   box-shadow: 8px 8px 5px black;
   border-radius: 25px;
   grid-column: 2 / span 5;
   font-size: 2rem;
   padding: 2rem;
+  margin-top: 50px;
+  margin-left: 90px;
   margin-bottom: var(--spacing);
+  width: 40%;
   z-index: 1;
+  color: white;
 }
 
-section {
-  grid-column: 2 / 9;
+.data {
+  display: block;
+  grid-column: 2 / 8;
   padding: 1rem;
   backdrop-filter: blur(8px);
-  border: 1px dotted black;
+  border: 1px solid black;
   box-shadow: 8px 8px 5px black;
   border-radius: 25px;
   font-size: 1.25rem;
@@ -155,31 +162,89 @@ section {
 }
 
 h2 {
-  color: black;
+  color: white;
   font-size: 40px;
+  font-family: "Rampart One", cursive;
 }
 
-.left {
-  grid-column: 4 / 12;
-}
-
-ul li {
-  color: #a1fc4c;
-}
-
-blockquote {
-  margin: 0;
-  padding: 0;
-  grid-column: 2 / span 10;
+.right {
+  display: block;
+  grid-column: 6 / 12;
+  backdrop-filter: blur(8px);
+  border: 1px d black;
+  box-shadow: 8px 8px 5px black;
+  border-radius: 25px;
+  margin-bottom: 90px;
+  padding: 1rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 1.5;
   margin-bottom: var(--spacing);
 }
 
-blockquote p {
+ul li {
+  color: yellow;
+}
+
+.social-menu ul li {
+  list-style: none;
+  margin: 2px 20px;
+  display: inline-block;
+  font-size: 32px;
+  padding: 12px 18px;
+  border: 1px solid white;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+
+.social-menu ul li a {
   color: white;
-  backdrop-filter: blur(5px);
-  border: 1px dotted black;
-  border-radius: 25px;
-  font-size: 2rem;
-  display: inline;
-  line-height: 1;
+}
+
+#one:hover {
+  background-color: #88f78c;
+}
+
+#two:hover {
+  background-color: #e5f257;
+}
+
+#three:hover {
+  background-color: #eb0e45;
+}
+
+#four:hover {
+  background-color: white;
+}
+
+#five:hover {
+  background-color: #c218ed;
+}
+
+#six:hover {
+  background-color: black;
+}
+
+.fa-envelope:hover {
+  color: red;
+}
+.fa-linkedin:hover {
+  color: #0a66c2;
+}
+
+.fa-github:hover {
+  color: #000;
+}
+
+.fa-twitter-square:hover {
+  color: #1da1f2;
+}
+
+.fa-dev:hover {
+  color: #000;
+}
+
+.fa-facebook:hover {
+  color: #1877f2;
 }
