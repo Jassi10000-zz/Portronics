@@ -76,14 +76,14 @@ const earth = new THREE.Mesh(
 scene.add(earth);
 
 earth.position.z = 20;
-earth.position.setX(-1);
+earth.position.setX(-5);
 
 // Moon
 const moonTexture = new THREE.TextureLoader().load('./Images/moon.jpg');
 const surfaceTexture = new THREE.TextureLoader().load('./Images/surface.jpg');
 
 const moon = new THREE.Mesh(
-  new THREE.SphereGeometry(2, 30, 30),
+  new THREE.SphereGeometry(1.2, 20, 20),
   new THREE.MeshStandardMaterial({
     map: moonTexture,
     normalMap: surfaceTexture,
@@ -93,13 +93,13 @@ const moon = new THREE.Mesh(
 scene.add(moon);
 
 moon.position.z = 25;
-moon.position.setX(-10);
+moon.position.setX(-9);
 
 
 // mars
 const marsTexture = new THREE.TextureLoader().load('./Images/mars.jpg');
 const mars = new THREE.Mesh(
-  new THREE.SphereGeometry(4, 33, 33),
+  new THREE.SphereGeometry(3.5, 33, 33),
   new THREE.MeshStandardMaterial({
     map: marsTexture,
   })
@@ -107,14 +107,14 @@ const mars = new THREE.Mesh(
 
 scene.add(mars);
 
-mars.position.z = 35;
+mars.position.z = 33;
 mars.position.setX(-20);
 
 
 // jupiter
 const jupiterTexture = new THREE.TextureLoader().load('./Images/jupiter.jpg');
 const jupiter = new THREE.Mesh(
-  new THREE.SphereGeometry(6, 37, 37),
+  new THREE.SphereGeometry(8, 37, 37),
   new THREE.MeshStandardMaterial({
     map: jupiterTexture,
   })
@@ -129,7 +129,7 @@ jupiter.position.setX(-40);
 // venus
 const venusTexture = new THREE.TextureLoader().load('./Images/venus.jpg');
 const venus = new THREE.Mesh(
-  new THREE.SphereGeometry(9,39, 39),
+  new THREE.SphereGeometry(9,48, 48),
   new THREE.MeshStandardMaterial({
     map: venusTexture,
   })
@@ -137,13 +137,13 @@ const venus = new THREE.Mesh(
 
 scene.add(venus);
 
-venus.position.z = 75;
+venus.position.z = 100;
 venus.position.setX(-50);
 
 // neptune
 const neptuneTexture = new THREE.TextureLoader().load('./Images/neptune.jpg');
 const neptune = new THREE.Mesh(
-  new THREE.SphereGeometry(10,40, 40),
+  new THREE.SphereGeometry(10,40,40),
   new THREE.MeshStandardMaterial({
     map: neptuneTexture,
   })
@@ -151,7 +151,7 @@ const neptune = new THREE.Mesh(
 
 scene.add(neptune);
 
-neptune.position.z = 110;
+neptune.position.z = 160;
 neptune.position.setX(-60);
 
 // **********************************************************************
