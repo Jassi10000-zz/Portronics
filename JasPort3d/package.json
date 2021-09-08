@@ -10,6 +10,10 @@
     "vite": "^2.4.4"
   },
   "dependencies": {
-    "three": "^0.131.3"
+    "@vite/vitejs": "^2.3.14",
+    "@vitejs/plugin-vue": "^1.6.1",
+    "@vue/compiler-sfc": "^3.2.9",
+    "three": "^0.131.3",
+    "vite-plugin-style-import": "^1.2.1"
   }
 }
