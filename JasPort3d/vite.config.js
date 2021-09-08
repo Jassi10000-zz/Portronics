@@ -5,7 +5,7 @@ import { resolve } from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/dist/',
+  base: '/',
   build: {
     chunkSizeWarningLimit:3000,
     rollupOptions: {
