@@ -175,12 +175,11 @@ header {
   section.data {
     display: block;
     padding: 1rem;
-    backdrop-filter: blur(8px);
+    background-color: var(--dark-bg);
+    opacity: 0.9;
     border: 1px solid black;
-    box-shadow: 8px 8px 5px black;
     border-radius: 25px;
     font-size: 1rem;
-    font-weight: bold;
     line-height: 1.5;
     margin: 30px 80px 40px 10px;
     width: 100%;
@@ -193,13 +192,12 @@ header {
 
   section.right {
     display: block;
-    backdrop-filter: blur(8px);
+    background-color: var(--dark-bg);
+    opacity: 0.9;
     border: 1px d black;
-    box-shadow: 8px 8px 5px black;
     border-radius: 25px;
     padding: 1rem;
     font-size: 1rem;
-    font-weight: bold;
     margin: 25px auto;
     width: 100%;
   }
@@ -223,9 +221,9 @@ header {
   section.data {
     display: block;
     padding: 1rem;
-    backdrop-filter: blur(8px);
+    background-color: var(--dark-bg);
+    opacity: 0.9;
     border: 1px solid black;
-    box-shadow: 8px 8px 5px black;
     border-radius: 25px;
     font-size: 1rem;
     font-weight: bold;
@@ -241,9 +239,9 @@ header {
 
   section.right {
     display: block;
-    backdrop-filter: blur(8px);
+    background-color: var(--dark-bg);
+    opacity: 0.9;
     border: 1px solid black;
-    box-shadow: 8px 8px 5px black;
     border-radius: 25px;
     padding: 0.7rem;
     font-size: 1rem;
@@ -257,12 +255,11 @@ header {
   display: block;
   grid-column: 2 / 11;
   padding: 1rem;
-  backdrop-filter: blur(8px);
+  background-color: var(--dark-bg);
+  opacity: 0.9;
   border: 1px solid black;
-  box-shadow: 8px 8px 5px black;
   border-radius: 25px;
   font-size: 1.25rem;
-  font-weight: bold;
   line-height: 1.5;
   margin-bottom: var(--spacing);
 }
@@ -276,14 +273,13 @@ h2 {
 .right {
   display: block;
   grid-column: 3 / 12;
-  backdrop-filter: blur(8px);
-  border: 1px d black;
-  box-shadow: 8px 8px 5px black;
+  background-color: var(--dark-bg);
+  opacity: 0.9;
+  border: 1px solid black;
   border-radius: 25px;
   margin-bottom: 90px;
   padding: 1rem;
   font-size: 1.25rem;
-  font-weight: bold;
   line-height: 1.5;
   margin-bottom: var(--spacing);
 }
